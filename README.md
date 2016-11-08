@@ -100,6 +100,17 @@ callout callout--alert
 callout callout--severe
 ```
 
+### Compact
+
+- Tighter padding
+- Makes callout flow to width of content
+- Can be applied to any callout
+
+![Info callout](callout/info-compact.png)
+
+```
+callout callout--compact
+```
 
 ## Panel
 
@@ -110,6 +121,18 @@ callout callout--severe
 
 ![Alert callout](panel/header.png)
 
+```
+panel 
+panel__header
+panel__content
+```
+
 ### Panel with footer
 
 ![Alert callout](panel/footer.png)
+
+```
+panel 
+panel__content
+panel__footer
+```
