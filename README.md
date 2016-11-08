@@ -5,18 +5,18 @@
 
 This a growing collection of patterns emerging from NHS.UK beta prototypes. They will continue to be iterated on. They are in no way finished or finalised.
 
-- [Typography](#typography)
+- [Base](#base)
 - [Callout](#callout)
+- [Panel](#panel)
 
 
 ## Base
-
-#### Notes
 
 - Font TBC
 - Body copy 20px
 - Baseline grid 4px
 - All margins, padding and line heights should be multiples of 4
+- Headings in sentence case
 
 ### Headings
 
@@ -99,3 +99,17 @@ callout callout--alert
 ```
 callout callout--severe
 ```
+
+
+## Panel
+
+- Mini content assembly
+- Orientation/understanding/action
+
+### Panel with header
+
+![Alert callout](panel/header.png)
+
+### Panel with footer
+
+![Alert callout](panel/footer.png)
