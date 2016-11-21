@@ -38,33 +38,35 @@ This a growing collection of patterns emerging from NHS.UK beta prototypes. They
 
 ![Headings](base/list/chevron.png)
 
-```
-list--chevron
+```html
+<ul class="list--chevron">
+  <li>...</li>
+</ul>
 ```
 
 ### Check list
 
-![Headings](base/list/check.png)
+![Check list](base/list/check.png)
 
-```
-list--check
+```html
+<ul class="list--check">
+  <li>...</li>
+</ul>
 ```
 
 ### Cross list
 
-![Headings](base/list/check.png)
+![Cross list](base/list/check.png)
 
-```
-list--cross
+```html
+<ul class="list--cross">
+  <li>...</li>
+</ul>
 ```
 
 ### Table
 
-![Headings](base/table/table.png)
-
-```
-list--cross
-```
+![Table](base/table.png)
 
 ## Callout
 
@@ -77,9 +79,11 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ### Muted
 
+- Only used for 111 banner
+
 ![Muted callout](callout/muted.png)
 
-```
+```html
 <div class="callout callout--muted">...</div>
 ```
 
@@ -87,15 +91,17 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ![Info callout](callout/info.png)
 
-```
+```html
 <div class="callout callout--info">...</div>
 ```
 
 ### Attention
 
+- Used when escalating an action eg. See a GP if…
+
 ![Attention callout](callout/attention.png)
 
-```
+```html
 <div class="callout callout--attention">...</div>
 ```
 
@@ -103,7 +109,7 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ![Warning callout](callout/warning.png)
 
-```
+```html
 <div class="callout callout--warning">...</div>
 ```
 
@@ -111,7 +117,7 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ![Alert callout](callout/alert.png)
 
-```
+```html
 <div class="callout callout--alert">...</div>
 ```
 
@@ -119,7 +125,7 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ![Alert callout](callout/severe.png)
 
-```
+```html
 <div class="callout callout--severe">...</div>
 ```
 
@@ -131,7 +137,7 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ![Info callout](callout/info-compact.png)
 
-```
+```html
 <div class="callout callout--compact">...</div>
 ```
 
@@ -144,7 +150,7 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ![Panel with header](panel/header.png)
 
-```
+```html
 <article class="panel">
   <header class="panel__header">...</footer>
   <div class="panel__content">...</div>
@@ -166,9 +172,9 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 - Comparison of binary lists where individual items have direct opposite
 
-![Panel table](table/panel.png)
+![Panel table](panel/table.png)
 
-```
+```html
 <table class="panel">...</table>
 ```
 
@@ -178,8 +184,13 @@ Callouts are used to draw attention to a piece of content and prompt people to t
 
 ![Panel with binary lists](panel/binary.png)
 
-```
-panel panel--binary
-panel__column
-panel__content
+```html
+<article class="panel panel--binary">
+  <div class="panel__column">
+    <div class="panel__content">...</div>
+  </div>
+  <div class="panel__column">
+    <div class="panel__content">...</div>
+  </div>
+</article>
 ```
