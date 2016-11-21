@@ -34,7 +34,7 @@ This a growing collection of patterns emerging from NHS.UK beta prototypes. They
 
 ![Headings](base/list/numbered.png)
 
-### Chevron list list
+### Chevron list
 
 ![Headings](base/list/chevron.png)
 
@@ -42,10 +42,33 @@ This a growing collection of patterns emerging from NHS.UK beta prototypes. They
 list--chevron
 ```
 
+### Check list
+
+![Headings](base/list/check.png)
+
+```
+list--check
+```
+
+### Cross list
+
+![Headings](base/list/check.png)
+
+```
+list--cross
+```
+
+### Table
+
+![Headings](base/table/table.png)
+
+```
+list--cross
+```
 
 ## Callout
 
-Callouts are used to draw attention to a particular piece of content and/or prompt people to take action.  
+Callouts are used to draw attention to a piece of content and prompt people to take action.  
 
 #### Notes
 
@@ -57,7 +80,7 @@ Callouts are used to draw attention to a particular piece of content and/or prom
 ![Muted callout](callout/muted.png)
 
 ```
-callout callout--muted
+<div class="callout callout--muted">...</div>
 ```
 
 ### Info
@@ -65,7 +88,7 @@ callout callout--muted
 ![Info callout](callout/info.png)
 
 ```
-callout callout--info
+<div class="callout callout--info">...</div>
 ```
 
 ### Attention
@@ -73,7 +96,7 @@ callout callout--info
 ![Attention callout](callout/attention.png)
 
 ```
-callout callout--attention
+<div class="callout callout--attention">...</div>
 ```
 
 ### Warning
@@ -81,7 +104,7 @@ callout callout--attention
 ![Warning callout](callout/warning.png)
 
 ```
-callout callout--warning
+<div class="callout callout--warning">...</div>
 ```
 
 ### Alert
@@ -89,7 +112,7 @@ callout callout--warning
 ![Alert callout](callout/alert.png)
 
 ```
-callout callout--alert
+<div class="callout callout--alert">...</div>
 ```
 
 ### Severe
@@ -97,7 +120,7 @@ callout callout--alert
 ![Alert callout](callout/severe.png)
 
 ```
-callout callout--severe
+<div class="callout callout--severe">...</div>
 ```
 
 ### Compact
@@ -109,7 +132,7 @@ callout callout--severe
 ![Info callout](callout/info-compact.png)
 
 ```
-callout callout--compact
+<div class="callout callout--compact">...</div>
 ```
 
 ## Panel
@@ -119,20 +142,44 @@ callout callout--compact
 
 ### Panel with header
 
-![Alert callout](panel/header.png)
+![Panel with header](panel/header.png)
 
 ```
-panel 
-panel__header
-panel__content
+<article class="panel">
+  <header class="panel__header">...</footer>
+  <div class="panel__content">...</div>
+</article>
 ```
 
 ### Panel with footer
 
-![Alert callout](panel/footer.png)
+![Panel with footer](panel/footer.png)
+
+```html
+<article class="panel">
+  <div class="panel__content">...</div>
+  <footer class="panel__footer">...</footer>
+</article>
+```
+
+### Panel table
+
+- Comparison of binary lists where individual items have direct opposite
+
+![Panel table](table/panel.png)
 
 ```
-panel 
+<table class="panel">...</table>
+```
+
+### Panel with binary lists
+
+- Comparison of binary themed lists where individual items are not directly opposing
+
+![Panel with binary lists](panel/binary.png)
+
+```
+panel panel--binary
+panel__column
 panel__content
-panel__footer
 ```
