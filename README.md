@@ -5,10 +5,34 @@
 
 This a growing collection of patterns emerging from NHS.UK beta prototypes. They will continue to be iterated on. They are in no way finished or finalised.
 
+- [Grid](#Grid)
 - [Base](#base)
 - [Callout](#callout)
 - [Panel](#panel)
 
+##Grid
+
+This guideline explains how our flexible, percentage-based grid works and how you can use it.
+
+### Overview
+
+The NHS grid is a flexible 16 column grid, that has percentage-based columns and gutters.
+It expands to a max width of 960px. At sizes above 960px the grid is centrally aligned.
+
+[grids](grids/grids.png)
+
+### Spacing and layout
+The grid uses fixed margins and gutters to help control the proportion and balance of the page. The margins and gutters are set to 16px for small screens and 32px for larger screens.
+
+### Layouts
+Any number of columns can be used to suit the content and create interesting layouts at different widths.
+
+For layouts intended for use on smaller screens, we recommend using a maximum of 4 columns.
+
+(grids/layouts.png)
+
+### BreakPoints
+For simplicity, we are using 2 breakpoints, that results in three layouts. We expect these to expand and increase in complexity.
 
 ## Base
 
