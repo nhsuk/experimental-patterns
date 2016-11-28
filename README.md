@@ -34,7 +34,7 @@ For layouts intended for use on smaller screens, we recommend using a maximum of
 ### BreakPoints
 For simplicity, we are using 2 breakpoints, that results in three layouts. We expect these to expand and increase in complexity.
 
-![Graphic showing breakpoints](grids/layouts.png)
+![Graphic showing breakpoints](grids/breakpoints.png)
 
 ## Base
 
